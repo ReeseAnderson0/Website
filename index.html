@@ -27,7 +27,7 @@
             <h2 class="logo"></h2>
             <div class="toggle active"></div>
         </header>
-        <video src="/images/beach_background.mp4" muted loop autoplay></video>
+        <video class="background-mp4" src="/images/beach_background.mp4" muted loop autoplay></video>
         <div class="overlay"></div>
         <div class="text">
             <h2>Reese Anderson</h2>
@@ -50,7 +50,7 @@
 </body>
  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 <script type="text/javascript">
-    $(document).ready(function() {
+    $("#background-mp4").ready(function() {
         alert("loaded");
         var loadingWrapper = document.getElementsByClassName('loading-wrapper');
         loadingWrapper[0].style.display = "none";
