@@ -6,6 +6,10 @@
     font-family: 'Montserrat', 'Times New Roman', Times, serif;
 }
 
+.SchoolSection {
+    display: none;
+}
+
 .root {
     position: absolute;
     right: 0;
