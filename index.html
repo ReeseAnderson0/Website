@@ -12,9 +12,6 @@
 </head>
 
 <body>
-    <div class="loadingScreen">
-        <div class="spinner"></div>
-    </div>
     <section class="root active">
         <header>
             <h2 class="logo"></h2>
@@ -50,12 +47,4 @@
         rootLayout.classList.toggle('active')
     })
 </script>
-<script>
-    let spinner = document.querySelector('.loadingScreen');
-
-    window.addEventListener('load', function() {
-        spinner.parentElement.removeChild(spinner);
-    });
-</script>
-
 </html>
