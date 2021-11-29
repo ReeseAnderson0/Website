@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="styling.css" rel="stylesheet" type="text/css">
+    <title>Travel Landing Page</title>
+    <div class="SchoolSection">
+        <a class="fd" href="/School/Seceret.html">School Stuff</a>
+    </div>
+</head>
+
+<body>
+    <div class="loadingScreen">
+        <div class="spinner"></div>
+    </div>
+    <section class="root active">
+        <header>
+            <h2 class="logo"></h2>
+            <div class="toggle active"></div>
+        </header>
+        <video src="/images/beach_background.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <div class="text">
+            <h2>Reese Anderson</h2>
+            <h3>I'm a Humber College Undergraduate student focusing on Web Development living in Mississauga, On.</h3>
+        </div>
+    </section>
+    <div class="menu">
+        <ul>
+            <li>
+                <h2><a href="https://github.com/ReeseAnderson0">Github</a></h2>
+            </li>
+            <li>
+                <h2><a href="https://www.linkedin.com/in/reese-anderson">Linkedin</a></h2>
+            </li>
+            <li>
+                <h2><a href="mailto:ReeseAnderson@onmail.com">Mail</a></h2>
+            </li>
+        </ul>
+    </div>
+</body>
+<script>
+    const menuToggle = document.querySelector('.toggle')
+    const rootLayout = document.querySelector('.root')
+
+    menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active')
+        rootLayout.classList.toggle('active')
+    })
+</script>
+<script>
+    let spinner = document.querySelector('.loadingScreen');
+
+    window.addEventListener('load', function() {
+        spinner.parentElement.removeChild(spinner);
+    });
+</script>
+
+</html>
