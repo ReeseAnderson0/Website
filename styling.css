@@ -14,7 +14,7 @@
     left: 0;
     background: #E3DAC9;
     z-index: 9999;
-    display: none;
+    display: fixed;
 }
 
 .box {
